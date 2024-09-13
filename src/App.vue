@@ -29,7 +29,7 @@ export default {
 <template>
   <div>
     <!-- 3) Utilizzo del componente -->
-    <AppHeader />
+    <AppHeader/>
     
     <main>
       <button class="btn btn-primary" @click="incrementCount()">
@@ -43,4 +43,5 @@ export default {
 @use 'assets/scss/main' as *;
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
 </style>
