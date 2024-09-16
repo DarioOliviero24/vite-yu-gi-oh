@@ -8,8 +8,8 @@ export default {
 }
 </script>
 <template>
-  <div>
-    <h5>ciao</h5>
+  <div class="container">
+    <h5>FOOTER</h5>
   </div>
     
 </template>
