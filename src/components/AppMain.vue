@@ -38,6 +38,18 @@
 </script>
 <template >
   <div class="BT">
+    <div class="container M">
+      <div class="dropdown">
+        <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
+          Alien
+        </button>
+      </div>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
     <div class="cards container BC">
         <Card class="MT" v-for="(card, i) in store.cards" :key='i' :name="card.name" :archetype="card.archetype"
             :image="card.image"/>
@@ -63,5 +75,11 @@
     }
     .MT{
       margin-top: 40px;
+    }
+    .btn-white{
+      background-color: white;
+    }
+    .M{
+      margin-bottom: 30px;
     }
 </style>
