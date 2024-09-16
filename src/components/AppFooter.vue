@@ -8,6 +8,9 @@ export default {
 }
 </script>
 <template>
+  <div>
+    <h5>ciao</h5>
+  </div>
     
 </template>
 <style lang="scss" scoped>
