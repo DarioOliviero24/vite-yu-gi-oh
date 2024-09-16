@@ -36,11 +36,14 @@
    }
 }
 </script>
-<template>
-    <div class="cards container">
-        <Card v-for="(card, i) in store.card" :key='i' :name="card.name" :archetype="card.archetype"
+<template >
+  <div class="BT">
+    <div class="cards container BC">
+        <Card class="MT" v-for="(card, i) in store.cards" :key='i' :name="card.name" :archetype="card.archetype"
             :image="card.image"/>
     </div>
+  </div>
+    
 </template>
 <style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
@@ -48,5 +51,17 @@
         display: flex;
         flex-wrap: wrap;
         gap: 25px;
+    }
+    .BT{
+      background-color: orange;
+      padding-top: 70px;
+      
+    }
+    .BC{
+      background-color: white;
+     
+    }
+    .MT{
+      margin-top: 40px;
     }
 </style>
